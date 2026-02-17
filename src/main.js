@@ -41,6 +41,9 @@ function onSubmit(event) {
     })
     .catch(err => {
       hideLoader();
-      console.error(err);
+        iziToast.error({
+          message: 'Помилка при завантаженні!',
+          position: 'topRight'
+        });
     });
 }
