@@ -15,6 +15,9 @@ export function getImagesByQuery(query) {
       page: 1,
       per_page:9,
     },
-  });
+  })
+.then(response => {
+  return response.data.hits
+})
 }
 
