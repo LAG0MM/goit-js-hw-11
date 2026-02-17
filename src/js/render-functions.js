@@ -1,5 +1,7 @@
 
 const gallery = document.querySelector('.gallery');
+const loader = document.querySelector('.loader');
+
 
 export  function createGallery(images) { 
      const markup = images
@@ -25,11 +27,11 @@ export function clearGallery() {
 }
 
 export function showLoader() {
-    gallery.classList.add('loader')
+    loader.classList.add('is-hidden')
     console.log('Завантаження')
 }
 
 export function hideLoader() { 
-    gallery.classList.remove('loader')
+    loader.classList.remove('is-hidden')
     console.log('Закінчення завантаження')
 }
